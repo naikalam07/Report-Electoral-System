@@ -4,6 +4,7 @@
 using namespace std;
 
 
+
 //function for verifying age of the voter
 int voterAge(int age)
 if(age>=18)
