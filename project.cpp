@@ -10,7 +10,7 @@ int voterAge(int age)
 if(age>=18)
 cout<<"You can vote"<<endl;
 else{
-cout<<"You are under age"<<endl;
+cout<<"You are underage"<<endl;
 }
 struct Candidate {
     int id;
