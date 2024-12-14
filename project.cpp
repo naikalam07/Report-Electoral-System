@@ -8,7 +8,21 @@ string name;
 int votes;
 };
 
+void addCandidate(Candidate candidates[], int &candidateCount) {
+    if (candidateCount < 10) {
+        cout << "Enter candidate ID: ";
+        safeInput(candidates[candidateCount].id);
 
+        cout << "enter candidate name: ";                              //abdullah
+        cin >> candidates[candidateCount].name;
+
+        candidates[candidateCount].votes = 0;
+        candidateCount++;
+        cout << "Candidate added successfully.\n";
+    } else {
+        cout << "Cannot add more candidates limit reached.\n";
+    }
+}
 
 
 
