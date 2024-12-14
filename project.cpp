@@ -24,7 +24,13 @@ void addCandidate(Candidate candidates[], int &candidateCount) {
     }
 }
 
-
+void viewresults(Candidate candidates[], int candidateCount) {
+    cout << "\nElection Results:\n";
+    for (int i = 0; i < candidateCount; i++) {
+        cout << "ID: " << candidates[i].id << ", Name: " << candidates[i].name      //shahan
+             << ", votes: " << candidates[i].votes << "\n";
+    }
+}
 
 
 
