@@ -8,7 +8,7 @@ string name;
 int votes;
 };
 
-void addCandidate(Candidate candidates[], int &candidateCount) {
+void addCandidate(Candidate candidates[], int &candidateCount) {        //function to add candidates 
     if (candidateCount < 10) {
         cout << "Enter candidate ID: ";
         safeInput(candidates[candidateCount].id);
