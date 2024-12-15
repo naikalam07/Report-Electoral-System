@@ -124,9 +124,6 @@ int main (){
         cout << "Enter your choice: ";
         int choice;
         safeInput(choice);
-
-
-
     
     if(choice == 1){
         electionCommisionmenu(candidates , candidatesCount);
