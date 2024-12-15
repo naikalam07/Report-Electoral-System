@@ -30,7 +30,7 @@ void safeInput(int &input){
     }
 }
     
-void addCandidate(Candidate candidates[], int &candidateCount) {        //function to add candidates 
+void addCandidate(Candidate candidates[], int &candidateCount) {        //function for addding candidates 
     if (candidateCount < 10) {
         cout << "Enter candidate ID: ";
         safeInput(candidates[candidateCount].id);
