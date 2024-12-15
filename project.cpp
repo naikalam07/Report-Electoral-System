@@ -5,7 +5,7 @@ using namespace std;
 
 
 struct Candidate{
-int id;
+int id;               //moin
 string name;
 int votes;
 };
