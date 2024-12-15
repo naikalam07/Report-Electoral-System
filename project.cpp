@@ -2,11 +2,21 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
+
 struct Candidate{
 int id;
 string name;
 int votes;
 };
+
+struct Voter {
+    int id;           //naik
+    string name;
+    string vote;
+};
+
+
 void safeInput(int &input){
     while safeInput(true){
         cin >> input;
@@ -71,6 +81,8 @@ void castvote(Candidate candidates[], int candidateCount) {
 
 int main (){
 
+    Candidate candidates[10]; // Array to hold up to 10 candidates
+    int candidateCount = 0;                                            //naik
 
 
 
