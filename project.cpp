@@ -72,6 +72,22 @@ void castvote(Candidate candidates[], int candidateCount) {
 int main (){
 
 
+
+
+    
+    if(choice == 1){
+        electionCommisionmenu(candidates , candidatesCount);
+    } else if ( choice == 2){
+        voterMenu(candidates, candidateCount);
+    } else if ( choice == 3){
+        cout << "Goodbye!\n";
+        break;
+    } else {
+        cout << "Invalid choice\n";
+    }
+}
+    
+
     
     return 0;
 }
