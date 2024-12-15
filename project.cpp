@@ -47,7 +47,7 @@ void addCandidate(Candidate candidates[], int &candidateCount) {        //functi
 }
 
 void viewresults(Candidate candidates[], int candidateCount){
-    cout << "\nElection Results:\n";
+    cout << "\nElection Results:\n";                                  //shahan
     for(int i=0; i < candidateCount; i++){
         cout << "ID: " candiadates[i].id << "Name: " << candidates[i].name << endl;
     }
@@ -67,7 +67,7 @@ void castvote(Candidate candidates[], int candidateCount) {
     cout << "Enter the candidate ID you want to vote for: ";
     safeInput(id);
 
-    for (int i = 0; i < candidateCount; i++) {
+    for (int i = 0; i < candidateCount; i++) {                               //moin
         if (candidates[i].id == id) {
             candidates[i].votes++;
             cout << "Vote casted successfully.\n";
@@ -81,7 +81,7 @@ void castvote(Candidate candidates[], int candidateCount) {
 
 
 
-
+                                                                           //naik
 
 
 
@@ -95,7 +95,7 @@ void voterMenu(Candidate candidates[], int candidateCount) {
         cout << "2. Cast Vote\n";
         cout << "3. Back to Main Menu\n";
         cout << "Enter your choice: ";
-        int choice;
+        int choice;                                                  //moin
         safeInput(choice);
 
         if (choice == 1) {
