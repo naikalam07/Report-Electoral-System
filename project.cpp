@@ -77,11 +77,43 @@ void castvote(Candidate candidates[], int candidateCount) {
     cout << "Invalid candidate ID. Please try again.\n";
 }
 
+
+void electionCommissionmenu(Candidate candidates[], int &candidateCount) {
+    string password;
+    cout << "Enter election commission password: ";
+    cin >> password;
+
+    if (password == "pass098") {
+        while (true) {
+            cout << "\nElection Commission Menu:\n";
+            cout << "1. Add Candidate\n";
+            cout << "2. View Results\n";                            //naik
+            cout << "3. Back to Main Menu\n";
+            cout << "Enter your choice: ";
+            int choice;
+            safeInput(choice);
+
+            if (choice == 1) {
+                addCandidate(candidates, candidateCount);
+            } else if (choice == 2) {
+                viewresults(candidates, candidateCount);
+            } else if (choice == 3) {
+                break;
+            } else {
+                cout << "Invalid choice. Try again.\n";
+            }
+        }
+    } else {
+        cout << "Incorrect password.\n";
+    }
+}
+
+
       
 
 
 
-                                                                           //naik
+                                                                    
 
 
 
