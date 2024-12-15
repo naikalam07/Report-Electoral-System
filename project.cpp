@@ -7,7 +7,7 @@ int id;
 string name;
 int votes;
 };
-vois safeInput(int &input){
+void safeInput(int &input){
     while safeInput(true){
         cin >> input;
         if(cin.fail()){                                 //shaahan
