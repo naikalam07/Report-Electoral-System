@@ -7,7 +7,19 @@ int id;
 string name;
 int votes;
 };
-
+vois safeInput(int &input){
+    while safeInput(true){
+        cin >> input;
+        if(cin.fail()){                                 //shaahan
+        cin.clear();
+        cin.ignore(100, '\n');
+        cout << "Invalid Input. Please enter a vaild integer type ID.";
+        }else{
+            break;
+        }
+    }
+}
+    
 void addCandidate(Candidate candidates[], int &candidateCount) {        //function to add candidates 
     if (candidateCount < 10) {
         cout << "Enter candidate ID: ";
