@@ -116,6 +116,14 @@ int main (){
 
     Candidate candidates[10]; // Array to hold up to 10 candidates
     int candidateCount = 0;                                            //naik
+     while (true) {
+        cout << "\nVoting Machine System:\n";
+        cout << "1. Election Commission Menu\n";
+        cout << "2. Voter Menu\n";                        //abdullah
+        cout << "3. Exit\n";
+        cout << "Enter your choice: ";
+        int choice;
+        safeInput(choice);
 
 
 
