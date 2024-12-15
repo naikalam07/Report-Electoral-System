@@ -79,6 +79,39 @@ void castvote(Candidate candidates[], int candidateCount) {
 
       
 
+
+
+
+
+
+
+
+
+
+void voterMenu(Candidate candidates[], int candidateCount) {
+    while (true) {
+        cout << "\nVoter Menu:\n";
+        cout << "1. View Candidates\n";
+        cout << "2. Cast Vote\n";
+        cout << "3. Back to Main Menu\n";
+        cout << "Enter your choice: ";
+        int choice;
+        safeInput(choice);
+
+        if (choice == 1) {
+            viewcandidates(candidates, candidateCount);
+        } else if (choice == 2) {
+            castvote(candidates, candidateCount);
+        } else if (choice == 3) {
+            break;
+        } else {
+            cout << "Invalid choice. Try again.\n";
+        }
+    }
+}
+
+
+
 int main (){
 
     Candidate candidates[10]; // Array to hold up to 10 candidates
