@@ -95,11 +95,8 @@ int main (){
         cout << "Goodbye!\n";
         break;
     } else {
-        cout << "Invalid choice\n";
+        cout << "Invalid choice"<< endl;
     }
 }
-    
-
-    
     return 0;
 }
