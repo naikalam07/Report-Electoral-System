@@ -57,7 +57,7 @@ void viewresults(Candidate candidates[], int candidateCount){
 void viewcandidates(Candidate candidates[], int candidateCount) {
     cout << "\nlist of candidates:\n";                                   //abdullah
     for (int i = 0; i < candidateCount; i++) {
-        cout << "ID: " << candidates[i].id << ", Name: " << candidates[i].name << "\n";
+        cout << "ID: " << candidates[i].id << ", Name: " << candidates[i].name << " , Votes: "<< candidates[i].votes << "\n";
     }
 }
 
