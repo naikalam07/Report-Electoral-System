@@ -32,17 +32,17 @@ void safeInput(int &input){
     
 void addCandidate(Candidate candidates[], int &candidateCount) {        //function for addding candidates 
     if (candidateCount < 10) {
-        cout << "Enter candidate ID: ";
+        cout << "Enter Candidate's ID: ";
         safeInput(candidates[candidateCount].id);
 
-        cout << "enter candidate name: ";                              //abdullah
+        cout << "Enter Candidate's Name: ";                              //abdullah
         cin >> candidates[candidateCount].name;
 
         candidates[candidateCount].votes = 0;
         candidateCount++;
         cout << "Candidate added successfully.\n";
     } else {
-        cout << "Cannot add more candidates limit reached.\n";
+        cout << "Cannot add more candidates. Limit reached.\n";
     }
 }
 
@@ -55,7 +55,7 @@ void viewresults(Candidate candidates[], int candidateCount){
 
 
 void viewcandidates(Candidate candidates[], int candidateCount) {
-    cout << "\nlist of candidates:\n";                                   //abdullah
+    cout << "\nList of candidates:\n";                                   //abdullah
     for (int i = 0; i < candidateCount; i++) {
         cout << "ID: " << candidates[i].id << ", Name: " << candidates[i].name << " , Votes: "<< candidates[i].votes << "\n";
     }
@@ -64,7 +64,7 @@ void viewcandidates(Candidate candidates[], int candidateCount) {
 
 void castvote(Candidate candidates[], int candidateCount) {
     int id;
-    cout << "Enter the candidate ID you want to vote for: ";
+    cout << "Enter the Candidate's ID you want to vote for: ";
     safeInput(id);
 
     for (int i = 0; i < candidateCount; i++) {                               //moin
@@ -80,7 +80,7 @@ void castvote(Candidate candidates[], int candidateCount) {
 
 void electionCommissionmenu(Candidate candidates[], int &candidateCount) {
     string password;
-    cout << "Enter election commission password: ";
+    cout << "Enter Election Commission password: ";
     cin >> password;
 
     if (password == "pass098") {
