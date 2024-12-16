@@ -18,7 +18,7 @@ struct Voter {
 
 
 void safeInput(int &input){
-    while safeInput(true){
+    while (true){
         cin >> input;
         if(cin.fail()){                                 //shaahan
         cin.clear();
@@ -109,17 +109,6 @@ void electionCommissionmenu(Candidate candidates[], int &candidateCount) {
 }
 
 
-      
-
-
-
-                                                                    
-
-
-
-
-
-
 void voterMenu(Candidate candidates[], int candidateCount) {
     while (true) {
         cout << "\nVoter Menu:\n";
@@ -158,7 +147,7 @@ int main (){
         safeInput(choice);
     
     if(choice == 1){
-        electionCommisionmenu(candidates , candidatesCount);
+       electionCommissionmenu(candidates , candidateCount);
     } else if ( choice == 2){
         voterMenu(candidates, candidateCount);
     } else if ( choice == 3){
