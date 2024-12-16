@@ -49,7 +49,7 @@ void addCandidate(Candidate candidates[], int &candidateCount) {        //functi
 void viewresults(Candidate candidates[], int candidateCount){
     cout << "\nElection Results:\n";                                  //shahan
     for(int i=0; i < candidateCount; i++){
-        cout << "ID: " candiadates[i].id << "Name: " << candidates[i].name << endl;
+        cout << "ID: " candidates[i].id << "Name: " << candidates[i].name << endl;
     }
 }
 
