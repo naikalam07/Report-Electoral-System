@@ -10,11 +10,6 @@ string name;
 int votes;
 };
 
-struct Voter {
-    int id;           //naik
-    string name;
-    string vote;
-};
 
 
 void safeInput(int &input){
