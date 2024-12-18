@@ -24,9 +24,9 @@ void safeInput(int &input){
         }
     }
 }
-    
-void addCandidate(Candidate candidates[], int &candidateCount) {        //function for addding candidates 
-    if (candidateCount < 10) {
+    //function for adding candidates
+void addCandidate(Candidate candidates[], int &candidateCount) {        //candidate is an array of type Candidate which is user defined 
+    if (candidateCount < 10) {     //max 10 candidates can be added                                    
         cout << "Enter Candidate's ID: ";
         safeInput(candidates[candidateCount].id);
 
@@ -44,7 +44,9 @@ void addCandidate(Candidate candidates[], int &candidateCount) {        //functi
 void viewresults(Candidate candidates[], int candidateCount){
     cout << "\nElection Results:\n";                                  //shahan
     for(int i=0; i < candidateCount; i++){
-        cout << "ID:" << candidates[i].id << "  |  Name:" << candidates[i].name  << "  |  Votes:" << candidates[i].votes << "\n";
+        cout << "ID:" << candidates[i].id <<endl;
+            "  |  Name:" << candidates[i].name  <<endl;
+            cout<<"  Votes:" << candidates[i].votes << "\n";
     }
 }
 
