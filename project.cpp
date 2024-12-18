@@ -25,7 +25,9 @@ void safeInput(int &input){
     }
 }
     //function for adding candidates
-void addCandidate(Candidate candidates[], int &candidateCount) {        //candidate is an array of type Candidate which is user defined 
+void addCandidate(Candidate candidates[], int &candidateCount) {       /*candidate is an array of
+                                                                         type Candidate which is 
+                                                                         user defined */
     if (candidateCount < 10) {     //max 10 candidates can be added                                    
         cout << "Enter Candidate's ID: ";
         safeInput(candidates[candidateCount].id);
