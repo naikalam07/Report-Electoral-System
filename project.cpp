@@ -44,8 +44,8 @@ void addCandidate(Candidate candidates[], int &candidateCount) {        //candid
 void viewresults(Candidate candidates[], int candidateCount){
     cout << "\nElection Results:\n";                                  //shahan
     for(int i=0; i < candidateCount; i++){
-        cout << "ID:" << candidates[i].id <<endl;
-        cout<<" Name:" << candidates[i].name  <<endl;
+        cout << "ID:" << candidates[i].id <<" ";
+        cout<<" Name:" << candidates[i].name  <<" ";
             cout<<"  Votes:" << candidates[i].votes << "\n";
     }
 }
@@ -54,8 +54,9 @@ void viewresults(Candidate candidates[], int candidateCount){
 void viewcandidates(Candidate candidates[], int candidateCount) {
     cout << "\nList of candidates:\n";                                   //abdullah
     for (int i = 0; i < candidateCount; i++) {
-        cout << "ID: " << candidates[i].id << "  |  Name: " << candidates[i].name <<
-            "  |  Votes: "<< candidates[i].votes << "\n";
+        cout << "ID: " << candidates[i].id <<" ";
+            cout<<" Name: " << candidates[i].name <<endl;
+            
     }
 }
 
