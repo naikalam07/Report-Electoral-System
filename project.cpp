@@ -45,7 +45,7 @@ void viewresults(Candidate candidates[], int candidateCount){
     cout << "\nElection Results:\n";                                  //shahan
     for(int i=0; i < candidateCount; i++){
         cout << "ID:" << candidates[i].id <<endl;
-            "  |  Name:" << candidates[i].name  <<endl;
+        cout<<" Name:" << candidates[i].name  <<endl;
             cout<<"  Votes:" << candidates[i].votes << "\n";
     }
 }
